@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<div id="test">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span>
+        <span></span>
+        <span></span>
+        <span></span>                
+    </span>
+    <span></span>
+</div>
+
+
+<a href="#" onclick="alert(getCount(document.getElementById('test'), false));">Simple Count of Children</a> (Should result in 5)<br/>
+<a href="#" onclick="alert(getCount(document.getElementById('test'), true));">Count Inner Children</a> (Should result in 8)
+
+
+<div id="test1">
+
+<h1></h1>
+<table>
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+</table>
+
+<ul>
+<li id="f"> </li>
+<li></li>
+</ul>
+
+<div></div>
+
+</div>
+
+<a href="#" onclick="alert(getCount(document.getElementById('test1'), false));">Simple Count of Children</a> (Should result in 5)<br/>
+<a href="#" onclick="alert(getCount(document.getElementById('test1'), true));">Count Inner Children</a> (Should result in 8)
+
+
+
+
+
+ <script type="text/javascript" src="../js/div-counter.js"></script>
+</body>
+</html>
